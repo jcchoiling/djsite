@@ -5,3 +5,6 @@ class Article(models.Model):
     headline = models.CharField(max_length=255)
     publish_date = models.DateTimeField()
     content = models.TextField()
+
+    def __str__(self):
+        return self.headline

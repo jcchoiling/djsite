@@ -28,3 +28,7 @@ python manage.py shell
 >>> Article.objects.all()
 
 >>> Article.objects.create(headline="Amazon Alexa-powered robot that can order you a pizza",publish_date="2017-08-30",content="The 2.7-foot robot will go on sale in October for US$2,800, and will be available in English and German. Those are the languages that Alexa currently understands.")
+
+
+python manage.py createsuperuser
+admin.site.register(Model)

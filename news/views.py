@@ -6,6 +6,5 @@ from .models import Article
 
 def article_list(request):
 	articles = Article.objects.all()
-	output = ','.join([str(article) for article in articles])
-	return HttpResponse(output)
+	return render(request, 'news/news_list.html', {'articles':articles})
 
